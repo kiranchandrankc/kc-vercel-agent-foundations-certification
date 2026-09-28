@@ -8,7 +8,7 @@ interface ProductCardProps {
   priority?: boolean
 }
 
-export function ProductCard({ product, priority = false }: ProductCardProps) {
+export function ProductCard({ product, priority = false }: Readonly<ProductCardProps>) {
   const image = product.images[0]
   return (
     <Link
